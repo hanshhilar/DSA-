@@ -1,0 +1,4 @@
+Vertices: A, B, C, D, E, F
+Edges (undirected): A-B, A-C, B-D, B-E, C-F, E-F
+BFS/DFS start vertex: A
+Edge-search test pairs: (A,C) exists, (B,E) exists, (A,F) not-exists, (D,F) not-exists

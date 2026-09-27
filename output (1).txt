@@ -1,0 +1,52 @@
+=== MATRIX OUTPUT ===
+
+--- Adjacency Matrix ---
+   A  B  C  D  E  F  
+A  0  1  1  0  0  0  
+B  1  0  0  1  1  0  
+C  1  0  0  0  0  1  
+D  0  1  0  0  0  0  
+E  0  1  0  0  0  1  
+F  0  0  1  0  1  0  
+
+--- BFS (Adjacency Matrix) starting at A ---
+Order visited: A B C D E F 
+
+--- DFS (Adjacency Matrix) starting at A ---
+Order visited: A B D E F C 
+
+=== Edge search tests (Adjacency Matrix) ===
+
+Search edge A-C using MATRIX : FOUND   (operations = 1)
+
+Search edge B-E using MATRIX : FOUND   (operations = 1)
+
+Search edge A-F using MATRIX : NOT FOUND (operations = 1)
+
+Search edge D-F using MATRIX : NOT FOUND (operations = 1)
+
+=== LIST OUTPUT ===
+
+--- Adjacency List ---
+A -> B C 
+B -> A D E 
+C -> A F 
+D -> B 
+E -> B F 
+F -> C E 
+
+--- BFS (Adjacency List) starting at A ---
+Order visited: A B C D E F 
+
+--- DFS (Adjacency List) starting at A ---
+Order visited: A B D E F C 
+
+=== Edge search tests (Adjacency List) ===
+
+Search edge A-C using LIST   : FOUND   (operations = 2)
+
+Search edge B-E using LIST   : FOUND   (operations = 3)
+
+Search edge A-F using LIST   : NOT FOUND (operations = 2)
+
+Search edge D-F using LIST   : NOT FOUND (operations = 1)
